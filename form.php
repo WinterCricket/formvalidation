@@ -8,6 +8,10 @@
 		<script type="text/javascript" src="validate.js"></script>  
 		
 		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$('#form').validated();
+			});
 
 		</script>
 
@@ -30,16 +34,16 @@
 			<fieldset>
 			
 				<label for="name">Name: <em>*</em></label>
-				<input type="text" name="name" id="name">
+				<input type="text" name="name" id="name" class="required">
 				
 				<label for="phone">Phone (000-000-0000): <em>*</em></label>
-				<input type="text" name="phone" id="phone">
+				<input type="text" name="phone" id="phone" class="required">
 				
 				<label for="fax">Fax (000-000-0000):</label>
 				<input type="text" name="fax" id="fax">
 				
 				<label for="email">Email: <em>*</em></label>
-				<input type="text" name="email" id="email">
+				<input type="text" name="email" id="email" class="required email">
 				
 				<label for="comments">Comments:</label>
 				<textarea name="comments" id="comments"></textarea>
